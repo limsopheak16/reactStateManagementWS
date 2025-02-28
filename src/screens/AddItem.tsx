@@ -3,6 +3,7 @@ import { useState } from "react";
 import { AppDispath } from "../store/ store";
 import { useDispatch } from "react-redux";
 import { addItem } from "../store/shoppingSlice";
+import { addUser } from "../store/user";
 
 export const AddItem = () => {
   const navigate = useNavigate();
@@ -21,6 +22,8 @@ export const AddItem = () => {
   const handleSetName = () => {
     if (userName.trim()) {
       setUserName("");
+      dispatch(addUser(userName))
+      navigate("/");
     }
   };
 
