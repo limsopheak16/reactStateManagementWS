@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ShoppingList } from "./ShoppingList";
-import { AddItem } from "./AddItem";
+import {AddItem} from "./AddItem";
 
 export const App = () => {
   return (
